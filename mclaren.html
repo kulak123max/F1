@@ -5,31 +5,118 @@
     <title>McLaren F1 Team</title>
 
     <style>
-        body, ul, li { margin: 0; padding: 0; }
-        ul { list-style: none; padding: 10px; background-color: #222; display: flex; justify-content: center; gap: 20px; }
-        ul li a { color: white; font-weight: bold; text-decoration: none; font-family: Arial; }
-        ul li a:hover { color: orange; }
-        h1, p { text-align: center; font-family: Arial; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        /* MENU */
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+            margin: 0;
+            background-color: #000; /* czarne menu */
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff8c00; /* McLaren Papaya Orange */
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #00a0ff; /* McLaren Blue */
+        }
+
+        /* GŁÓWNY BLOK */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 6px solid #ff8c00; /* Pasek w kolorze McLarena */
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ff8c00;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00a0ff;
+            margin-top: 25px;
+        }
+
+        ul.info li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
 
+<!-- MENU -->
 <ul>
     <li><a href="index.html">Strona Główna</a></li>
-    <li><a href="mercedes.html">Mercedes</a></li>
-    <li><a href="redbull.html">Red Bull</a></li>
-    <li><a href="ferrari.html">Ferrari</a></li>
-    <li><a href="mclaren.html">McLaren</a></li>
-    <li><a href="astonmartin.html">Aston Martin</a></li>
     <li><a href="alpine.html">Alpine</a></li>
-    <li><a href="rb.html">RB</a></li>
+    <li><a href="astonmartin.html">Aston Martin</a></li>
+    <li><a href="ferrari.html">Ferrari</a></li>
     <li><a href="haas.html">Haas</a></li>
-    <li><a href="williams.html">Williams</a></li>
+    <li><a href="mclaren.html">McLaren</a></li>
+    <li><a href="mercedes.html">Mercedes</a></li>
+    <li><a href="rb.html">RB</a></li>
+    <li><a href="redbull.html">Red Bull</a></li>
     <li><a href="sauber.html">Sauber</a></li>
+    <li><a href="williams.html">Williams</a></li>
 </ul>
 
-<h1>McLaren Formula 1 Team</h1>
-<p>Opis zespołu McLaren, sezon 2025, historia…</p>
+<!-- TREŚĆ -->
+<div class="container">
+    <h1>McLaren F1 Team</h1>
+
+    <h2>Sezon 2025</h2>
+    <p>
+        McLaren w sezonie 2025 kontynuuje swój imponujący rozwój i regularnie walczy
+        na czele stawki. Bolid w charakterystycznym kolorze <b>Papaya Orange</b> prowadzą:
+    </p>
+    <ul class="info">
+        <li><b>Lando Norris</b></li>
+        <li><b>Oscar Piastri</b></li>
+    </ul>
+    <p>
+        Zespół jest uznawany za jednego z głównych rywali Red Bulla, Ferrari
+        i Mercedesa, często zdobywając podia i notując świetne tempo kwalifikacyjne.
+    </p>
+
+    <h2>Historia Zespołu</h2>
+    <p>
+        McLaren to jeden z najbardziej utytułowanych zespołów w historii Formuły 1.
+        Założony w 1963 roku przez Bruce’a McLarena, zdobył:
+    </p>
+    <ul class="info">
+        <li>8 tytułów mistrza świata konstruktorów</li>
+        <li>12 tytułów mistrza świata kierowców</li>
+        <li>ponad 180 zwycięstw w Grand Prix</li>
+    </ul>
+
+    <h2>Najważniejsze momenty w historii</h2>
+    <ul class="info">
+        <li>Dominacja Senny i Prosta w latach 80.</li>
+        <li>Bolid MP4/4 – najbardziej dominujący w historii F1.</li>
+        <li>Mistrzostwo Lewisa Hamiltona w 2008 roku.</li>
+        <li>Powrót do formy po 2021–2024 i regularne podia.</li>
+    </ul>
+</div>
 
 </body>
 </html>
